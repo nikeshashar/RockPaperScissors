@@ -1,0 +1,17 @@
+<html>
+<head>
+<link rel='stylesheet' id='stylesheet'  href='/stylesheets/choice.css' type='text/css' media='all' />
+</head>
+
+<body>
+	<h1>Choose your weapon <%= @player%></h1>
+
+	<form action="/play" method="POST" class="form">
+		<button name="pick" value="Paper">Paper</button>
+		<button name="pick" value="Rock">Rock</button>
+		<button name="pick" value="Scissors">Scissors</button>
+		<input type="hidden" name="name" value=<%=@name%>>
+	</form>
+</body>
+
+</html>
